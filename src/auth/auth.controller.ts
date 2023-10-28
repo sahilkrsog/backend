@@ -14,6 +14,7 @@ export class AuthController {
 
   @Get()
   findAll() {
+    console.log("hello");
     return this.authService.findAll();
   }
 
