@@ -24,6 +24,7 @@ export class AuthController {
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateAuthDto: UpdateAuthDto) {
+    console.log("ch")
     return this.authService.update(+id, updateAuthDto);
   }
 
